@@ -1,0 +1,18 @@
+package com.masai.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Department {
+	
+	@Id
+	private int deptid;
+	private String dname;
+	private String location;
+	private List<Employee> emplist = new ArrayList<>();
+
+}

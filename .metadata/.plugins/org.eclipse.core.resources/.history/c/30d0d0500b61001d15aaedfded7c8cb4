@@ -1,0 +1,13 @@
+package com.masai;
+
+public class d2 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		demo d =new demo();
+		d.s
+	
+	}
+}

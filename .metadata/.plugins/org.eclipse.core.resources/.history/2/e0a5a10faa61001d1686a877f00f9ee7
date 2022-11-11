@@ -1,0 +1,12 @@
+package com.masai.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+	
+	private int empid;
+	private String name;
+	private int salary;
+	
+}

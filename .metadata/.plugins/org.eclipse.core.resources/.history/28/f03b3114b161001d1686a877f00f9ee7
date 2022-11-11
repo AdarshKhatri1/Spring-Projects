@@ -1,0 +1,23 @@
+package com.masai.onetomany;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Demo {
+
+	public static void main(String[] args) {			
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("adarsh");		
+		EntityManager em = emf.createEntityManager();
+		Employee emp = new Employee(3, "harsh", 234234);		
+		Employee emp1 = new Employee(4, "koushik", 565);		
+		Department d  = new Department(2, "marketing", "delhi");
+		d.getEmplist().add(emp1);
+		d.getEmplist().add(emp);
+		em.getTransaction().begin();
+		em.persist(d);		
+		em.getTransaction().commit();
+		em.close();
+		System.out.println("success");		
+	}	
+}

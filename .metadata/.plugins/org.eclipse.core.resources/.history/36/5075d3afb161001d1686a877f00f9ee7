@@ -1,0 +1,16 @@
+package com.masai.onetomany;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Demo {
+
+	public static void main(String[] args) {			
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("adarsh");		
+		EntityManager em = emf.createEntityManager();
+		
+	
+		Employee emp = new Employee(0, null, 0, null);
+	}	
+}

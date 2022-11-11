@@ -1,0 +1,10 @@
+package com.masai.onetomany;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class Demo {
+
+	
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("adarsh");
+}
